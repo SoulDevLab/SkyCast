@@ -1,6 +1,6 @@
-# 🌦️ SkyCast
+# 🌦️ Weather-APP
 
-**SkyCast** is a very beginner-created weather app that lets you check the weather for any city with a clean interface, animated background, and real-time updates. This project was made to help me learn web development by building something practical and fun.
+**Weather-APP** is a very beginner-created weather app that lets you check the weather for any city with a clean interface, animated background, and real-time updates. This project was made to help me learn web development by building something practical and fun.
 
 ---
 
@@ -27,7 +27,7 @@ As a complete beginner, I took some parts of his HTML, CSS, and JavaScript code 
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/SoulDevLab/SkyCast.git
+   git clone https://github.com/SoulDevLab/Weather-APP.git
    ```
 
 2. **Get your OpenWeatherMap API key:**  
