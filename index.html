@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <canvas
+      id="backgroundCanvas"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+      ">
+      </canvas>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your location" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <section class="not-found">
+        <img src="warning.png" />
+        <p>Oops! Invalid location :/</p>
+        <p>Try a different city name or check for typos.</p>
+      </section>
+
+      <div class="weather-box">
+        <img src="" />
+        <p class="temp"></p>
+        <p class="info"></p>
+      </div>
+      <div class="weather-details">
+        <p class="weather-details-title">Current Weather :</p>
+        <div class="detail-card wind">
+          <i class="fa-solid fa-wind detail-icon"></i>
+          <div class="title">Wind</div>
+          <div class="value">
+            <span class="wind-value"></span> <span class="unit">km/h</span>
+          </div>
+        </div>
+        <div class="detail-card humidity">
+          <i class="fa-solid fa-water detail-icon"></i>
+          <div class="title">Humidity</div>
+          <div class="value">
+            <span class="humidity-value"></span>%
+          </div>
+        </div>
+        <div class="detail-card pressure">
+          <i class="fa-solid fa-gauge-high detail-icon"></i>
+          <div class="title">Pressure</div>
+          <div class="value">
+            <span class="pressure-value"></span> <span class="unit">hPa</span>
+          </div>
+        </div>
+        <div class="detail-card feels-like">
+          <i class="fa-solid fa-temperature-half detail-icon"></i>
+          <div class="title">Feels Like</div>
+          <div class="value">
+            <span class="feelslike-value"></span>°C
+          </div>
+        </div>
+        <div class="detail-card sunrise">
+          <i class="fa-solid fa-sun detail-icon"></i>
+          <div class="title">Sunrise</div>
+          <div class="value">
+            <span class="sunrise-value"></span>
+          </div>
+        </div>
+        <div class="detail-card sunset">
+          <i class="fa-solid fa-moon detail-icon"></i>
+          <div class="title">Sunset</div>
+          <div class="value">
+            <span class="sunset-value"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
